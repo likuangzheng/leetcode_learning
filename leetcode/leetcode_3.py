@@ -1,18 +1,3 @@
-# Longest Substring Without Repeating Characters
-
-# Given a string, find the length of the longest substring without
-# repeating characters.
-
-
-# Examples:
-
-# Given "abcabcbb", the answer is "abc", which the length is 3.
-
-# Given "bbbbb", the answer is "b", with the length of 1.
-
-# Given "pwwkew", the answer is "wke", with the length of 3. 
-# Note that the answer must be a substring, 
-# "pwke" is a subsequence and not a substring.
 
 class Solution:
     def lengthOfLongestSubstring(self, s):
@@ -35,6 +20,28 @@ class Solution:
             word_recorder[word] = position
         max_length = max(length, max_length)
         return max_length
+        
+#        longest_length = [0]
+#        def findLength(purpose_string, length, word_cache):
+#            
+#            print(purpose_string, length, word_cache)
+#            if not purpose_string:
+#                if length > longest_length[0]:
+#                    longest_length[0] = length
+#                return length
+#
+#            if purpose_string[0] in word_cache:
+#                if length > longest_length[0]:
+#                    longest_length[0] = length
+#                return findLength(purpose_string, 0, [])
+#            else:
+#                length += 1
+#                word_cache.append(purpose_string[0])
+#
+#           return findLength(purpose_string[1:], length, word_cache)
+#
+#       findLength(s, 0, [])
+#        return longest_length[0]
 
 solution = Solution()
 print(solution.lengthOfLongestSubstring('abcabcbb'))
