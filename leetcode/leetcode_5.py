@@ -1,15 +1,15 @@
-#Longest Palindromic Substring,Palindormic
+# Longest Palindromic Substring,Palindormic
 # just like the format of ABCDCBA or ABCCBA
 
-#Example 1:
+# Example 1:
 
-#Input: "babad"
-#Output: "bab"
-#Note: "aba" is also a valid answer.
+# Input: "babad"
+# Output: "bab"
+# Note: "aba" is also a valid answer.
 
-#Example 2:
-#Input: "cbbd"
-#Output: "bb"
+# Example 2:
+# Input: "cbbd"
+# Output: "bb"
 
 import pprint 
 
